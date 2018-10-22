@@ -30,7 +30,7 @@ namespace Chart_test
 			timer1.Interval = 1000;     //定时1000ms
 			double newX, newY;
 			newX = i;
-			newY = rnd.Next(200);
+			newY = rnd.Next(500);
 			chart1.Series[0].Points.AddXY(newX, newY);
 			i++;
 			if (chart1.Series[0].Points.Count > 20)// 绘画坐标点超过100个时将实时更新X时间坐标/
