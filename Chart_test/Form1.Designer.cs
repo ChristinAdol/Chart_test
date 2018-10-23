@@ -41,7 +41,7 @@
 			// 
 			this.timer1.Enabled = true;
 			this.timer1.Interval = 1000;
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);	//必须设置这个，不然图表无法显示 
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// chart1
 			// 
@@ -56,6 +56,7 @@
 			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
 			series1.Legend = "Legend1";
 			series1.Name = "Series1";
+			series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time;
 			this.chart1.Series.Add(series1);
 			this.chart1.Size = new System.Drawing.Size(800, 450);
 			this.chart1.TabIndex = 0;
